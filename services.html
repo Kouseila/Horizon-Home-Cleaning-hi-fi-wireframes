@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | Horizon Home Cleaning</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        Horizon Home Cleaning
+      </a>
+
+      <button class="menu-toggle"
+              type="button"
+              aria-label="Open navigation"
+              aria-expanded="false"
+              aria-controls="main-nav">
+        ☰
+      </button>
+
+      <nav id="main-nav" class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html" aria-current="page">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Services Introduction -->
+    <section class="services-intro">
+      <div class="container">
+        <h1>Our Cleaning Services</h1>
+        <p>
+          At Horizon Home Cleaning, we offer reliable
+          cleaning services to help you enjoy a clean,
+          fresh, and comfortable home.
+        </p>
+      </div>
+    </section>
+
+    <!-- Move Cleaning -->
+    <section class="service-row">
+      <div class="container service-content">
+
+        <div class="service-image">
+          <img
+            src="images/move-cleaning.jpg"
+            alt="Clean and empty room ready for moving">
+        </div>
+
+        <div class="service-text">
+          <h2>Move-In & Move-Out Cleaning</h2>
+
+          <p>
+            Moving can be stressful. Our move-in and
+            move-out cleaning service helps make your
+            transition easier.
+          </p>
+
+          <p>
+            We clean kitchens, bathrooms, floors,
+            and other important areas so your home
+            is ready for its next chapter.
+          </p>
+
+          <a href="#contact" class="btn">
+            Book Cleaning
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Deep Cleaning -->
+    <section class="service-row">
+      <div class="container service-content reverse">
+
+        <div class="service-image">
+          <img
+            src="images/deep-cleaning.jpg"
+            alt="Bright and freshly cleaned kitchen">
+        </div>
+
+        <div class="service-text">
+          <h2>Deep Cleaning</h2>
+
+          <p>
+            Our deep cleaning service is perfect
+            when your home needs extra attention.
+          </p>
+
+          <p>
+            We focus on detailed cleaning, including
+            hard-to-reach areas, kitchen surfaces,
+            bathrooms, and floors.
+          </p>
+
+          <a href="#contact" class="btn">
+            Book Cleaning
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Standard Cleaning -->
+    <section class="service-row">
+      <div class="container service-content">
+
+        <div class="service-image">
+          <img
+            src="images/standard-cleaning.jpg"
+            alt="Clean and comfortable living room">
+        </div>
+
+        <div class="service-text">
+          <h2>Standard Cleaning</h2>
+
+          <p>
+            Keep your home looking fresh with
+            our regular cleaning service.
+          </p>
+
+          <p>
+            This service includes general dusting,
+            vacuuming, mopping, and cleaning
+            kitchens and bathrooms.
+          </p>
+
+          <a href="#contact" class="btn">
+            Book Cleaning
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2>Ready for a Cleaner Home?</h2>
+
+        <p>
+          Contact Horizon Home Cleaning to learn
+          more about our services or request a booking.
+        </p>
+
+        <a href="mailto:info@example.com" class="btn">
+          Contact Us
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>Horizon Home Cleaning</p>
+      <p>&copy; 2026 Horizon Home Cleaning.</p>
+    </div>
+  </footer>
+
+  <!-- Mobile Navigation -->
+  <script>
+    const menuButton = document.querySelector(".menu-toggle");
+    const navigation = document.querySelector(".main-nav");
+
+    menuButton.addEventListener("click", function () {
+      const isOpen = navigation.classList.toggle("open");
+
+      menuButton.setAttribute("aria-expanded", isOpen);
+      menuButton.textContent = isOpen ? "✕" : "☰";
+    });
+  </script>
+
+</body>
+</html>
